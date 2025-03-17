@@ -2,11 +2,11 @@
 import { Rss } from "lucide-react"
 import { LanguageToggle } from "~/components/react/language-toggle"
 import { ThemeToggle } from "~/components/react/theme-toggle"
-import { en, zh } from "~/config"
+import { id } from "~/config"
 import { getLangFromUrl } from "~/i18n/utils"
 
 const lang = getLangFromUrl(Astro.url)
-const config = lang === "zh" ? zh : en
+const config = lang === "zh" ? id : id
 ---
 
 <header class="flex h-24 w-full items-center justify-between">
